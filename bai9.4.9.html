@@ -17,19 +17,31 @@
         arr.push(element)
         document.getElementById("result").innerHTML = arr;
     }
-    let arr1 = []
+
 
     function checkElement(){
+        let count = 0
         let element = document.getElementById("add").value;
         for (let i = 0; i < arr.length; i++) {
           if (element === arr[i]){
-              arr1.push(arr[i])
+              count ++
           }
         }
-        document.getElementById("result").innerHTML = 'check element = ' + arr[i]
-        document.getElementById("result1").innerHTML = "the numbere of element is "+ arr1.length
+        document.getElementById("result").innerHTML = 'check element = ' + element
+        if (count === 0) {
+            let output = -1
+        }
+        else {
+            output = count
+        }
 
+        document.getElementById("result1").innerHTML = "element " + element + " occurs " + output +" times"
     }
+
+
+
+
+
 
 </script>
 </body>
