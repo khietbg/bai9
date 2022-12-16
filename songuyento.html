@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="so" type="text">nhap so
+<button onclick="tinh()">kiemtra</button>
+<label id="kq"></label>
+<script>
+    function tinh() {
+        let so = +document.getElementById('so').value;
+        for (let i = 2; i < so; i++) {
+
+            if (so % i == 0) {
+
+
+                document.getElementById('kq').innerHTML = so + " khong phai so nguyen to"
+                break;
+            } else  {
+                document.getElementById("kq").innerHTML = so + " la so nguyen to"
+
+            }
+            }
+        if(so<2){
+            document.getElementById('kq').innerHTML = so + " k phai so nguyen to"// document.getElementById('kq').innerHTML= +i +"la so nguyen to"
+
+
+        }
+    }
+</script>
+</body>
+</html>

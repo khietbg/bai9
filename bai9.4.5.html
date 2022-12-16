@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="numA">nhap so a
+<input type="text" id="numB">nhap so b
+<input type="text" id="numC">nhap so c
+<button onclick="seachMin()">tim min</button>
+<p id="kq"></p>
+<script>
+    function seachMin(numA,numB,numC) {
+        // let a = numA;
+        // let b = numB;
+        // let c = numC;
+        let a = +document.getElementById("numA").value;
+        let b = +document.getElementById("numB").value;
+        let c = +document.getElementById("numC").value;
+        if (b<a){
+            if (c<b){
+                document.getElementById("kq").innerHTML = "min = " + c
+                }else {
+                document.getElementById("kq").innerHTML = "min = " + b
+            }
+
+        }else if (a<c){
+            document.getElementById("kq").innerHTML = "min = " +a
+        } else {
+            document.getElementById("kq").innerHTML= "min = " + c
+        }
+    }
+
+</script>
+</body>
+</html>

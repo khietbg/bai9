@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<label>Fahreheit</label>-->
+<!--<input id="nhap" type="text">-->
+<!--<button onclick="doi()">doi</button>-->
+<!--<p id="kq"></p>-->
+<!--<script>-->
+
+<!--    function doi() {-->
+<!--        let doF = +document.getElementById('nhap').value;-->
+<!--        let doC = (doF-32)/1.8-->
+
+<!--        document.getElementById('kq').innerHTML= "do c = " + doC;-->
+
+<!--    }-->
+<!--</script>-->
+<p>
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+           oninput="temperatureConverter(this.value)"
+           >
+</p>
+<p>Celsius: <span id="outputCelsius"></span></p>
+<script>
+
+function temperatureConverter(valNum) {
+valNum = parseFloat(valNum);
+document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+}
+
+</script>
+
+</body>
+</html>

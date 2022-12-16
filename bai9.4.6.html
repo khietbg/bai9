@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhap" type="text">nhap so
+<button onclick="seach()">kiemtra</button>
+<p id="kq"></p>
+<script>
+    function seach() {
+        let a = +document.getElementById("nhap").value;
+        let check = true
+        if (a>0){
+            check = true
+        }
+        else check=false
+        if(check){
+            document.getElementById("kq").innerHTML = a + " la so nguyen duong";
+        }else
+        document.getElementById("kq").innerHTML = a + " k phai so nguyen duong";
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="soA" type="text">nhap so a <br>
+<input id="soB" type="text">nhap so b <br>
+<button onclick="tinh()">hiển thị</button><br>
+<lable id="ketqua"></lable>
+<script>
+    function sum(numA, numB) {
+        if (numA<numB){
+            return (numA+numB)
+        }else {
+            return ("khong tinh")
+        }
+        
+    }
+    function tinh(){
+        let numA = +document.getElementById("soA").value;
+        let numB = +document.getElementById("soB").value;
+        let tong = sum(numA,numB)
+        document.getElementById("ketqua").innerHTML= tong
+    }
+
+</script>
+</body>
+</html>

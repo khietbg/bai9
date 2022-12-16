@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num = prompt()
+  const arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+  const arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa", "Major", "Leo"]
+
+
+
+  function searchStar(num) {
+      for (let i = 0; i < arr1.length; i++) {
+          if (num === arr1[i]){
+              arr1[i]=arr2[i]
+              return arr2[i]
+          }
+      }return "k co trong chom"
+
+  }
+
+  //   let indexOfStar = arr1.indexOf(starName)
+  //
+  //   if (indexOfStar == -1) {
+  //     return "khong co ngoi sao trong mang"
+  //   } else {
+  //     return arr2[indexOfStar]
+  //   }
+  // }
+
+    result = searchStar(num)
+
+    alert(result)
+
+</script>
+</body>
+</html>

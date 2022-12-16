@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>feet</p><input id="nhap" type="number" onchange="doi(this.value)" placeholder="nhập feet"  ><br>
+<label id="kq">Meters</label>
+<script>
+    function doi(val){
+    val = parseFloat(val);
+    document.getElementById("kq").innerHTML = val*0.305
+
+    }
+</script>
+</body>
+</html>

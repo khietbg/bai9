@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="add" type="text">
+<button onclick="add()">add</button>
+<button onclick="checkElement()">checkElement</button>
+<p id="result"></p><br>
+<p id="result1"></p>
+<script>
+    let arr = []
+    function add() {
+        let element = document.getElementById("add").value;
+        arr.push(element)
+        document.getElementById("result").innerHTML = arr;
+    }
+    let arr1 = []
+
+    function checkElement(){
+        let element = document.getElementById("add").value;
+        for (let i = 0; i < arr.length; i++) {
+          if (element === arr[i]){
+              arr1.push(arr[i])
+          }
+        }
+        document.getElementById("result").innerHTML = 'check element = ' + arr[i]
+        document.getElementById("result1").innerHTML = "the numbere of element is "+ arr1.length
+
+    }
+
+</script>
+</body>
+</html>
